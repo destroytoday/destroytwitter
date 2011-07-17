@@ -1,0 +1,227 @@
+.TextField
+{
+	/*embedFonts: true;*/
+	selectable: false;
+	mouseEnabled: false;
+	antiAliasType: advanced;
+}
+
+.TextInputTextField
+{
+	/*embedFonts: true;*/
+	antiAliasType: advanced;
+}
+
+.TextField .StartupTextField
+{
+	embedFonts: true;
+}
+
+.TextField .ApplicationWindowBarTextField
+{
+	embedFonts: true;
+}
+
+.TextField .LoginTitle
+{
+	embedFonts: true;
+}
+
+.TextField .TextButtonTextField
+{
+	embedFonts: true;
+}
+
+.TextField .ProgressTextField
+{
+	embedFonts: true;
+}
+
+.TextField .QuickFriendLookupTitle
+{
+	embedFonts: true;
+}
+
+.TextField .TextfieldListTextField
+{
+	embedFonts: true;
+	mouseEnabled: true;
+	styleSheet: p, a, a:hover, .selected;
+}
+
+.TextField .PreferencesTextField
+{
+	embedFonts: true;
+	mouseEnabled: true;
+	styleSheet: p, a, a:hover, .subtitle, .dimmed, .preference;
+}
+
+.TextField .TrayTextField
+{
+	embedFonts: true;
+	mouseEnabled: true;
+	styleSheet: p, a, a:hover, .footer, .footerLink;
+}
+
+.TextField .AlertTextField
+{
+	embedFonts: true;
+	multiline: true;
+	wordWrap: true;
+	condenseWhite: true;
+	autoSize: left;
+	styleSheet: .alertSummary, .alertMessage;
+}
+
+.TextField .CanvasTitle
+{
+	embedFonts: true;
+	mouseEnabled: true;
+	styleSheet: p, a, a:hover, .title, .unread;
+}
+
+.alertSummary
+{
+	leading: 10;
+}
+
+.alertMessage
+{
+	font-family: Interstate-Regular;
+	font-size: 11;
+	leading: 2;
+}
+
+.title
+{
+	font-size: 18;
+}
+
+.unread
+{
+	font-size: 14;
+}
+
+.TextField .DrawerTitle
+{
+	embedFonts: true;
+	mouseEnabled: true;
+	styleSheet: p, a, a:hover, .title, .drawerSubTitle;
+}
+
+.drawerSubTitle
+{
+	font-size: 11;
+}
+
+.TextField .FilterTextField
+{
+	embedFonts: true;
+	multiline: true;
+	wordWrap: true;
+	styleSheet: p;
+}
+
+.StatusTextField
+{
+	antiAliasType: advanced;
+	selectable: true;
+	mouseEnabled: true;
+	multiline: true;
+	wordWrap: true;
+	styleSheet: p, a, a:hover, .url, .screenName, .hashtag, .stockSymbol, .systemFont;
+}
+
+.TextField .StatusInfoTextField
+{
+	embedFonts: true;
+	selectable: true;
+	mouseEnabled: true;
+	styleSheet: p, a, a:hover, .statusInfo, .statusDate;
+}
+
+.TextField .UpdateTextField
+{
+	embedFonts: true;
+	selectable: true;
+	mouseEnabled: true;
+	multiline: true;
+	wordWrap: true;
+	styleSheet: p, a, a:hover, .dimmed, .updateSubtitle, .spacer;
+}
+
+.TextField .ProfileTextField
+{
+	selectable: true;
+	mouseEnabled: true;
+	multiline: true;
+	wordWrap: true;
+	styleSheet: p, a, a:hover, .screenName, .hashtag, .stockSymbol, .spacer, .profileScreenName, .systemFont;
+}
+
+.TextField .URLPreviewTextField
+{
+	selectable: true;
+	mouseEnabled: true;
+	multiline: true;
+	wordWrap: true;
+	styleSheet: p, a, a:hover, .systemFont, .drawerSubtitle;
+}
+
+p
+{
+	font-family: Interstate-Regular;
+	font-size: 11;
+	leading: 3;
+}
+
+.systemFont
+{
+	font-family: _sans;
+	font-size: 11;
+	leading: 0;
+}
+
+.statusSpacer
+{
+	leading: -8;
+}
+
+.spacer
+{
+	leading: -6;
+}
+
+.statusInfo
+{
+	font-size: 9;
+	leading: 3;
+}
+
+.TextField .NotificationTextField
+{
+	embedFonts: true;
+	styleSheet: p, .notificationTitle;
+}
+
+.notificationTitle
+{
+	leading: 8;
+}
+
+.subtitle
+{
+	font-size: 14;
+	leading: 8;
+}
+
+.updateSubtitle
+{
+	font-size: 13;
+	leading: 8;
+}
+
+.preference
+{
+	leading: 6;
+}

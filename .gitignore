@@ -8,4 +8,4 @@
 *.p12
 construction
 releases
-bin
+bin*

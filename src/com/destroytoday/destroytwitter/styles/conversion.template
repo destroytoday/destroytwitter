@@ -1,0 +1,339 @@
+/*
+ Notes:
+	- only change hex values — keep class names and property names as they are
+	- classes like ".TextField .QuickFriendLookupTextField" mean it's inheriting .TextField's properties, not setting both
+	- really light text against a dark background makes text a bit blotchy. 
+	  If you have this problem, try using a slightly darker color, like #DDDDDD instead of #FFFFFF
+	- use 'Reload current theme' under Preferences or the Command+Shift+Alt+R hotkey when fine-tuning your theme	
+	- convert old .dtwt themes by dragging them into DestroyTwitter — they will appear as a .css in the themes folder
+	- specify the 'forVersion' property under #META to ensure backwards and forwards compatibility
+	- share your theme with others by tweeting it with the hashtag #destroytwittertheme
+*/
+
+#META
+{
+	name: %name%;
+	creator: %creator%;
+	forVersion: %forVersion%;
+}
+
+.ApplicationWindowBar 
+{
+	backgroundGradientStartColor: %tabBackground%;
+	backgroundGradientEndColor: %tabBackgroundDarker%;
+}
+
+/* PC-only */
+.ApplicationControlButton
+{
+	upColor: %tabText%;
+	overColor: %tabTextOver%;
+}
+
+.ApplicationWindowBarTextField
+{
+	textColor: %tabText%;
+}
+
+.ApplicationWindowBackground
+{
+	backgroundColor: %background%;
+}
+
+.ApplicationWindowFooter
+{
+	backgroundColor: %tabBackground%;
+}
+
+.BaseCanvas
+{
+	backgroundColor: %background%;
+}
+
+.BaseNavigationBar
+{
+	border: true;
+	borderColor: %navigationBorder%;
+	backgroundColor: %navigationBackground%;
+}
+
+.BaseNavigationButton
+{
+	border: true;
+	borderColor: %navigationBorder%;
+	backgroundUpColor: %tabBackground%;
+	backgroundOverColor: %tabBackgroundOver%;
+	backgroundSelectedUpColor: %tabBackgroundSelected%;
+	backgroundSelectedOverColor: %tabBackgroundSelectedOver%;
+}
+
+.BaseNavigationButton .NavigationTextButton
+{
+	textUpColor: %tabText%;
+	textOverColor: %tabTextOver%;
+	textSelectedUpColor: %tabTextSelected%;
+	textSelectedOverColor: %tabTextSelected%;
+	textHighlightedColor: %tabTextHighlighted%;
+}
+
+/* Tweet button (speech bubble) */
+.BaseNavigationButton .NavigationBitmapButton
+{
+	bitmapUpColor: %tabText%;
+	bitmapOverColor: %tabTextOver%;
+	bitmapSelectedUpColor: %tabTextSelected%;
+	bitmapSelectedOverColor: %tabTextSelected%;
+}
+
+.NotificationWindow
+{
+	backgroundColor: %background%;
+}
+
+/* darkens the rest of the app when the drawer is open */
+.Dimmer
+{
+	backgroundColor: %background%;
+}
+
+/* "Starting up..." */
+.StartupTextField
+{
+	textColor: %text%;
+}
+
+.LoginTitle
+{
+	textColor: %header%;
+}
+
+/* buttons like submit, apply, etc */
+.TextButton
+{
+	textUpColor: %tabText%;
+	textOverColor: %tabTextOver%;
+	textDisabledColor: %tabText%;
+	backgroundUpColor: %tabBackground%;
+	backgroundOverColor: %tabBackgroundOver%;
+	backgroundDisabledColor: %tabBackground%;
+}
+
+/* icon buttons such as older, newer, most recent, etc */
+.BitmapButton
+{
+	upColor: %link%;
+	overColor: %linkOver%;
+	disabledColor: %textDisabled%;
+}
+
+/* loader */
+.Spinner
+{
+	color: %loader%;
+}
+
+.FailWhale
+{
+	upColor: %error%;
+	overColor: %error%;
+	disabledColor: %error%;
+}
+
+/* "50% of 24kb" */
+.ProgressTextField
+{
+	textColor: %link%;
+}
+
+.ScrollerThumb
+{
+	arrowColor: %scrollbarArrows%;
+	backgroundUpColor: %scrollbar%;
+	backgroundOverColor: %scrollbarOver%;
+	backgroundDisabledColor: %scrollbarDisabled%;
+}
+
+.ScrollerTrack
+{
+	borderColor: %link%;
+	backgroundColor: %scrollbarBackground%;
+}
+
+.Alert
+{
+	backgroundColor: %alertBackground%;
+}
+
+.TextField .AlertTextField
+{
+	textColor: %alertText%;
+}
+
+.Drawer
+{
+	borderColor: %link%;
+	backgroundColor: %background%;
+}
+
+.Dialogue
+{
+	borderColor: %textDisabled%;
+}
+
+.QuickFriendLookup
+{
+	backgroundColor: %overlayBackground%;
+}
+
+.TextField .QuickFriendLookupTitle
+{
+	textColor: %header%;
+}
+
+.TextInput
+{
+	textUnfocusedColor: %inputText%;
+	textFocusedColor: %inputText%;
+	textDisabledColor: %inputText%;
+	textErrorColor: %inputText%;
+	borderUnfocusedColor: %inputBorder%;
+	borderFocusedColor: %inputBorderFocused%;
+	borderDisabledColor: %inputBorder%;
+	borderErrorColor: %inputBorder%;
+	backgroundUnfocusedColor: %inputBackground%;
+	backgroundFocusedColor: %inputBackground%;
+	backgroundDisabledColor: %inputBackground%;
+	backgroundErrorColor: %inputBackground%;
+}
+
+.TextInput .QuickFriendLookupInput
+{
+	backgroundUnfocusedColor: %inputBackground%;
+	backgroundFocusedColor: %inputBackground%;
+	backgroundDisabledColor: %inputBackground%;
+	backgroundErrorColor: %inputBackground%;
+}
+
+/* Tweet */
+.StreamStatus
+{
+	indicatorColor: %link%;
+	borderUpColor: %textDisabled%;
+	borderSelectedUpColor: %tweetBorderSelected%;
+	borderSelectedOverColor: %tweetBorderSelectedOver%;
+	backgroundUpColor: %tweetBackground%;
+	backgroundOverColor: %tweetBackgroundOver%;
+	backgroundSelectedUpColor: %tweetBackgroundSelected%;
+	backgroundSelectedOverColor: %tweetBackgroundOver%;
+	backgroundUnreadColor: %tweetBackground%;
+}
+
+/* 
+ *
+ * HTML classes
+ *
+*/
+
+/* body text */
+p
+{
+	color: %text%;
+}
+
+/* link */
+a
+{
+	color: %link%;
+}
+
+/* link over */
+a:hover
+{
+	color: %linkOver%;
+}
+
+/* url in a tweet */
+.url
+{
+	color: %link%;
+}
+
+/* @mention in a tweet */
+.screenName
+{
+	color: %usernameLink%;
+}
+
+/* #hashtag in a tweet */
+.hashtag
+{
+	color: %hashtagLink%;
+}
+
+/* stock symbol (ie $ADBE) in a tweet */
+.stockSymbol
+{
+	color: %link%;
+}
+
+/* canvas titles, drawer titles */
+.title
+{
+	color: %header%;
+}
+
+/* preference headers */
+.subtitle
+{
+	color: %header%;
+}
+
+/* Quick Friend Lookup selection */
+.selected
+{
+	color: %textSelected%;
+}
+
+/* compose character count */
+.drawerSubTitle
+{
+	color: %text%;
+}
+
+.profileScreenName
+{
+	color: %date%;
+}
+
+.statusDate
+{
+	color: %date%;
+}
+
+/* preference notes, update tags */
+.dimmed
+{
+	color: %date%;
+}
+
+/* checking for updates... */
+.footer
+{
+	color: %date%;
+}
+
+/* update available */
+.footerLink
+{
+	color: %link%;
+}
+
+.notificationTitle
+{
+	color: %link%;
+}
+
+.updateSubtitle
+{
+	color: %header%;
+}

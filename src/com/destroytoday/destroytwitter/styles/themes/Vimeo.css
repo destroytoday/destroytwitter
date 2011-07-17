@@ -1,0 +1,339 @@
+/*
+ Notes:
+	- only change hex values — keep class names and property names as they are
+	- classes like ".TextField .QuickFriendLookupTextField" mean it's inheriting .TextField's properties, not setting both
+	- really light text against a dark background makes text a bit blotchy. 
+	  If you have this problem, try using a slightly darker color, like #DDDDDD instead of #FFFFFF
+	- use 'Reload current theme' under Preferences or the Command+Shift+Alt+R hotkey when fine-tuning your theme	
+	- convert old .dtwt themes by dragging them into DestroyTwitter — they will appear as a .css in the themes folder
+	- specify the 'forVersion' property under #META to ensure backwards and forwards compatibility
+	- share your theme with others by tweeting it with the hashtag #destroytwittertheme
+*/
+
+#META
+{
+	name: Vimeo;
+	creator: Lim Chee Aun;
+	forVersion: 2.1.0;
+}
+
+.ApplicationWindowBar 
+{
+	backgroundGradientStartColor: #2c333c;
+	backgroundGradientEndColor: #1E232A;
+}
+
+/* PC-only */
+.ApplicationControlButton
+{
+	upColor: #BFC6D2;
+	overColor: #B0D730;
+}
+
+.ApplicationWindowBarTextField
+{
+	textColor: #BFC6D2;
+}
+
+.ApplicationWindowBackground
+{
+	backgroundColor: #1E232A;
+}
+
+.ApplicationWindowFooter
+{
+	backgroundColor: #1E232A;
+}
+
+.BaseCanvas
+{
+	backgroundColor: #1E232A;
+}
+
+.BaseNavigationBar
+{
+	border: true;
+	borderColor: #1E232A;
+	backgroundColor: #1E232A;
+}
+
+.BaseNavigationButton
+{
+	border: true;
+	borderColor: #1E232A;
+	backgroundUpColor: #1E232A;
+	backgroundOverColor: #1E232A;
+	backgroundSelectedUpColor: #00ADEF;
+	backgroundSelectedOverColor: #00ADEF;
+}
+
+.BaseNavigationButton .NavigationTextButton
+{
+	textUpColor: #BFC6D2;
+	textOverColor: #B0D730;
+	textSelectedUpColor: #FFFFFF;
+	textSelectedOverColor: #FFFFFF;
+	textHighlightedColor: #00ADEF;
+}
+
+/* Tweet button (speech bubble) */
+.BaseNavigationButton .NavigationBitmapButton
+{
+	bitmapUpColor: #BFC6D2;
+	bitmapOverColor: #B0D730;
+	bitmapSelectedUpColor: #FFFFFF;
+	bitmapSelectedOverColor: #FFFFFF;
+}
+
+.NotificationWindow
+{
+	backgroundColor: #1E232A;
+}
+
+/* darkens the rest of the app when the drawer is open */
+.Dimmer
+{
+	backgroundColor: #1E232A;
+}
+
+/* "Starting up..." */
+.StartupTextField
+{
+	textColor: #BFC6D2;
+}
+
+.LoginTitle
+{
+	textColor: #FFFFFF;
+}
+
+/* buttons like submit, apply, etc */
+.TextButton
+{
+	textUpColor: #969696;
+	textOverColor: #B0D730;
+	textDisabledColor: #2c333c;
+	backgroundUpColor: #1E232A;
+	backgroundOverColor: #1E232A;
+	backgroundDisabledColor: #1E232A;
+}
+
+/* icon buttons such as older, newer, most recent, etc */
+.BitmapButton
+{
+	upColor: #00ADEF;
+	overColor: #FC575E;
+	disabledColor: #969696;
+}
+
+/* loader */
+.Spinner
+{
+	color: #00ADEF;
+}
+
+.FailWhale
+{
+	upColor: #CC0000;
+	overColor: #CC0000;
+	disabledColor: #CC0000;
+}
+
+/* "50% of 24kb" */
+.ProgressTextField
+{
+	textColor: #00ADEF;
+}
+
+.ScrollerThumb
+{
+	arrowColor: #1E232A;
+	backgroundUpColor: #27B8EF;
+	backgroundOverColor: #FC575E;
+	backgroundDisabledColor: #2E3540;
+}
+
+.ScrollerTrack
+{
+	borderColor: #00ADEF;
+	backgroundColor: #1E232A;
+}
+
+.Alert
+{
+	backgroundColor: #00ADEF;
+}
+
+.TextField .AlertTextField
+{
+	textColor: #FFFFFF;
+}
+
+.Drawer
+{
+	borderColor: #00ADEF;
+	backgroundColor: #1E232A;
+}
+
+.Dialogue
+{
+	borderColor: #969696;
+}
+
+.QuickFriendLookup
+{
+	backgroundColor: #191919;
+}
+
+.TextField .QuickFriendLookupTitle
+{
+	textColor: #FFFFFF;
+}
+
+.TextInput
+{
+	textUnfocusedColor: #BFC6D2;
+	textFocusedColor: #BFC6D2;
+	textDisabledColor: #BFC6D2;
+	textErrorColor: #BFC6D2;
+	borderUnfocusedColor: #2E3540;
+	borderFocusedColor: #00ADEF;
+	borderDisabledColor: #2E3540;
+	borderErrorColor: #2E3540;
+	backgroundUnfocusedColor: #2E3540;
+	backgroundFocusedColor: #2E3540;
+	backgroundDisabledColor: #2E3540;
+	backgroundErrorColor: #2E3540;
+}
+
+.TextInput .QuickFriendLookupInput
+{
+	backgroundUnfocusedColor: #2E3540;
+	backgroundFocusedColor: #2E3540;
+	backgroundDisabledColor: #2E3540;
+	backgroundErrorColor: #2E3540;
+}
+
+/* Tweet */
+.StreamStatus
+{
+	indicatorColor: #00ADEF;
+	borderUpColor: #2c333c;
+	borderSelectedUpColor: #00ADEF;
+	borderSelectedOverColor: #00ADEF;
+	backgroundUpColor: #1E232A;
+	backgroundOverColor: #2E3540;
+	backgroundSelectedUpColor: #2E3540;
+	backgroundSelectedOverColor: #2E3540;
+	backgroundUnreadColor: #1E232A;
+}
+
+/* 
+ *
+ * HTML classes
+ *
+*/
+
+/* body text */
+p
+{
+	color: #BFC6D2;
+}
+
+/* link */
+a
+{
+	color: #00ADEF;
+}
+
+/* link over */
+a:hover
+{
+	color: #FC575E;
+}
+
+/* url in a tweet */
+.url
+{
+	color: #00ADEF;
+}
+
+/* @mention in a tweet */
+.screenName
+{
+	color: #B0D730;
+}
+
+/* #hashtag in a tweet */
+.hashtag
+{
+	color: #B0D730;
+}
+
+/* stock symbol (ie $ADBE) in a tweet */
+.stockSymbol
+{
+	color: #00ADEF;
+}
+
+/* canvas titles, drawer titles */
+.title
+{
+	color: #FFFFFF;
+}
+
+/* preference headers */
+.subtitle
+{
+	color: #FFFFFF;
+}
+
+/* Quick Friend Lookup selection */
+.selected
+{
+	color: #FFFFFF;
+}
+
+/* compose character count */
+.drawerSubTitle
+{
+	color: #BFC6D2;
+}
+
+.profileScreenName
+{
+	color: #969696;
+}
+
+.statusDate
+{
+	color: #969696;
+}
+
+/* preference notes, update tags */
+.dimmed
+{
+	color: #969696;
+}
+
+/* checking for updates... */
+.footer
+{
+	color: #969696;
+}
+
+/* update available */
+.footerLink
+{
+	color: #00ADEF;
+}
+
+.notificationTitle
+{
+	color: #00ADEF;
+}
+
+.updateSubtitle
+{
+	color: #FFFFFF;
+}

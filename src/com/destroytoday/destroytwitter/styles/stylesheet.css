@@ -1,0 +1,398 @@
+.ApplicationWindowBar 
+{
+	backgroundGradientStartColor: #3B3B3B;
+	backgroundGradientEndColor: #2B2B2B;
+}
+
+.ApplicationWindowBackground
+{
+	backgroundColor: #222222;
+}
+
+.ApplicationWindowFooter
+{
+	backgroundColor: #333333;
+}
+
+.TextField
+{
+	embedFonts: true;
+	selectable: false;
+	mouseEnabled: false;
+	antiAliasType: advanced;
+	textColor: #AAAAAA;
+}
+
+.TextInput
+{
+	textUnfocusedColor: #AAAAAA;
+	textFocusedColor: #AAAAAA;
+	textDisabledColor: #555555;
+	textErrorColor: #AAAAAA;
+	borderUnfocusedColor: #555555;
+	borderFocusedColor: #007998;
+	borderDisabledColor: #333333;
+	borderErrorColor: #CC0000;
+	backgroundUnfocusedColor: #222222;
+	backgroundFocusedColor: #222222;
+	backgroundDisabledColor: #222222;
+	backgroundErrorColor: #222222;
+}
+
+.TextField .TextInputTextField
+{
+	selectable: true;
+	mouseEnabled: true;
+}
+
+.TextField #loginTitle
+{
+	textColor: #FFFFFF;
+}
+
+.TextButton
+{
+	textUpColor: #C3C6C8;
+	textOverColor: #C3C6C8;
+	textDisabledColor: #555555;
+	backgroundUpColor: #333333;
+	backgroundOverColor: #424242;
+	backgroundDisabledColor: #2B2B2B;
+}
+
+.TextField #textfieldListTextField
+{
+	mouseEnabled: true;
+	styleSheet: p, a, a:hover, .selected;
+}
+
+.TextField #preferencesTextField
+{
+	mouseEnabled: true;
+	styleSheet: p, a, a:hover, .subtitle, .subtle, .preference;
+}
+
+.selected
+{
+	color: #FFFFFF;
+}
+
+.TextField #trayTextField
+{
+	mouseEnabled: true;
+	styleSheet: p, a, a:hover, .subtle;
+}
+
+.TextField #progressTextField
+{
+	textColor: #007998;
+}
+
+.MiniScrollerThumb
+{
+	backgroundColor: #007998;
+}
+
+.MiniScrollerTrack
+{
+	backgroundColor: #222222;
+}
+
+.BaseNavigationBar
+{
+	borderColor: #222222;
+	backgroundColor: #2B2B2B;
+}
+
+.BaseNavigationButton
+{
+	borderColor: #222222;
+	backgroundUpColor: #333333;
+	backgroundOverColor: #424242;
+	backgroundSelectedUpColor: #007998;
+	backgroundSelectedOverColor: #007998;
+}
+
+.BaseNavigationButton .NavigationTextButton
+{
+	textUpColor: #C3C6C8;
+	textSelectedColor: #FFFFFF;
+	textHighlightedColor: #3CADAE;
+}
+
+.BaseNavigationButton .NavigationBitmapButton
+{
+	bitmapUpColor: #C3C6C8;
+	bitmapSelectedColor: #FFFFFF;
+}
+
+.ApplicationControlButton
+{
+	upColor: #AAAAAA;
+	overColor: #FFFFFF;
+}
+
+.Alert
+{
+	textColor: #FFFFFF;
+	backgroundColor: #007998;
+}
+
+.TextField #alertTextField
+{
+	multiline: true;
+	wordWrap: true;
+	condenseWhite: true;
+	autoSize: left;
+	styleSheet: .alertSummary, .alertMessage;
+}
+
+.alertSummary
+{
+	leading: 10;
+}
+
+.alertMessage
+{
+	font-family: Interstate-Regular;
+	font-size: 11;
+	text-color: #FFFFFF;
+	leading: 2;
+}
+
+.Drawer
+{
+	borderColor: #007998;
+	backgroundColor: #222222;
+}
+
+.Dialogue
+{
+	borderColor: #424242;
+}
+
+.BaseCanvas
+{
+	backgroundColor: #222222;
+}
+
+.TextField #canvasTitle
+{
+	mouseEnabled: true;
+	styleSheet: p, a, a:hover, .title, .unread;
+}
+
+.title
+{
+	font-size: 18;
+	color: #FFFFFF;
+}
+
+.unread
+{
+	font-size: 14;
+}
+
+.BitmapButton
+{
+	upColor: #007998;
+	overColor: #3CADAE;
+	disabledColor: #555555;
+}
+
+.FailWhale
+{
+	upColor: #CC0000;
+	overColor: #FF3333;
+	disabledColor: #555555;
+}
+
+.ScrollerThumb
+{
+	arrowColor: #222222;
+	backgroundUpColor: #007998;
+	backgroundOverColor: #3CADAE;
+	backgroundDisabledColor: #555555;
+}
+
+.ScrollerTrack
+{
+	borderColor: #007998;
+	backgroundColor: #222222;
+}
+
+.QuickFriendLookup
+{
+	backgroundColor: #131313;
+}
+
+.TextField #quickFriendLookupTitle
+{
+	textColor: #FFFFFF;
+}
+
+.TextInput #quickFriendLookupInput
+{
+	backgroundUnfocusedColor: #131313;
+	backgroundFocusedColor: #131313;
+	backgroundDisabledColor: #131313;
+	backgroundErrorColor: #131313;
+}
+
+.TextField #drawerTitle
+{
+	mouseEnabled: true;
+	styleSheet: p, a, a:hover, .title, .drawerSubTitle;
+}
+
+.drawerSubTitle
+{
+	font-size: 11;
+	color: #AAAAAA;
+}
+
+.TextField #filterTextField
+{
+	multiline: true;
+	wordWrap: true;
+}
+
+.StreamStatus
+{
+	indicatorColor: #007998;
+	borderUpColor: #424242;
+	borderSelectedUpColor: #007998;
+	borderSelectedOverColor: #3CADAE;
+	backgroundUpColor: #222222;
+	backgroundOverColor: #333333;
+	backgroundSelectedUpColor: #333333;
+	backgroundSelectedOverColor: #333333;
+	backgroundUnreadColor: #282828;
+}
+
+#statusTextField
+{
+	antiAliasType: advanced;
+	textColor: #AAAAAA;
+	selectable: true;
+	mouseEnabled: true;
+	multiline: true;
+	wordWrap: true;
+	styleSheet: p, a, a:hover, .systemFont;
+}
+
+.TextField #statusInfoTextField
+{
+	selectable: true;
+	mouseEnabled: true;
+	styleSheet: p, a, a:hover, .statusInfo, .statusDate;
+}
+
+.TextField #updateTextField
+{
+	selectable: true;
+	mouseEnabled: true;
+	multiline: true;
+	wordWrap: true;
+	styleSheet: p, a, a:hover, .subtle, .updateSubtitle, .spacer;
+}
+
+.TextField #profileTextField
+{
+	selectable: true;
+	mouseEnabled: true;
+	multiline: true;
+	wordWrap: true;
+	styleSheet: p, a, a:hover, .spacer, .profileScreenName, .systemFont;
+}
+
+p
+{
+	font-family: Interstate-Regular;
+	font-size: 11;
+	color: #AAAAAA;
+	leading: 3;
+}
+
+a
+{
+	color: #007998;
+}
+
+a:hover
+{
+	color: #3CADAE;
+}
+
+.systemFont
+{
+	font-family: _sans;
+	font-size: 11;
+	leading: 0;
+}
+
+.statusSpacer
+{
+	leading: -8;
+}
+
+.profileScreenName
+{
+	color: #555555;
+}
+
+.spacer
+{
+	leading: -6;
+}
+
+.statusInfo
+{
+	font-size: 9;
+	leading: 3;
+}
+
+.statusDate
+{
+	color: #555555;
+}
+
+.subtle
+{
+	color: #666666;
+}
+
+.NotificationWindowContent
+{
+	backgroundColor: #222222;
+}
+
+.TextField #notificationText
+{
+	styleSheet: p, .notificationTitle;
+}
+
+.notificationTitle
+{
+	color: #007998;
+	leading: 8;
+}
+
+.subtitle
+{
+	font-size: 14;
+	color: #FFFFFF;
+	leading: 8;
+}
+
+.updateSubtitle
+{
+	font-size: 13;
+	color: #CCCCCC;
+	leading: 8;
+}
+
+.preference
+{
+	leading: 6;
+}
