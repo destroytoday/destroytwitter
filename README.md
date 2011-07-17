@@ -1,7 +1,7 @@
 #DestroyTwitter
 
 ##Warning
-The code you are about to see my scare small children. Please don't hate me for its lack of unit testing, documentation, and cleanliness. As a one man team trying to keep the app up-to-date with the latest Twitter features, I hurried a few areas of the app, so there are many inconsiderate implementations. If you'd like to go in and just clean up everything, feel free. I'd actually buy you dinner if you would.
+The code you are about to see might scare small children. Please don't hate me for its lack of unit testing, documentation, and cleanliness. As a one man team trying to keep the app up-to-date with the latest Twitter features, I hurried a few areas of the app, so there are many inconsiderate implementations. If you'd like to go in and just clean up everything, feel free. I'd actually buy you dinner if you would.
 
 ##Why open source it?
 I decided to open source DestroyTwitter because I'm not as available to maintain it as I was when the project started. I started DestroyTwitter when I was in college and had much more free time back then. Now that I have an actual job keeping me busy, I can't keep up with the needed bug fixes and features.
