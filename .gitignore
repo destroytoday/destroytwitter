@@ -1,0 +1,11 @@
+*.DS_Store
+.actionScriptProperties
+.flexProperties
+.FlexUnitSettings
+.metadata
+.project
+.settings
+*.p12
+construction
+releases
+bin
