@@ -14,3 +14,6 @@ Please don't submit your own build of DestroyTwitter to an app store saying it's
 
 ##Consumer key and secret
 Twitter requires a consumer key and secret registered through the dev section of their website. Feel free to register your own build, but only the official build will use the "via DestroyTwitter" key/secret for security reasons. We don't want someone making a malicious app with the key/secret, provoking Twitter to ban DestroyTwitter.
+
+##Discussions
+Use the IRC channel #destroytwitter on freenode.net to discuss anything related to DestroyTwitter. I'll try to be on as often as I can to answer questions or contribute to decision-making.
